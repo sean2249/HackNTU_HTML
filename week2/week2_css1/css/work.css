@@ -1,0 +1,26 @@
+/* 
+ 1. 標題字變成紅色(color:red)
+ 2. 第一個段落背景顏色是綠色(background:green;)
+ 3. 「閱讀全文 (柯文哲)」的背景是藍色(background: blue)
+ 4. 「閱讀全文」的字顏色是白色(color: white)
+ 5. 滑鼠移過「閱讀全文」時，字會變成黑色(color: black)
+*/
+
+h1{
+    color: red;
+}
+
+.entry p:first-child{
+    background-color: green;
+}
+
+.more{
+    background-color: blue;
+}
+
+.more a{
+    color:white;
+}
+.more a:hover{
+    color: black;
+}

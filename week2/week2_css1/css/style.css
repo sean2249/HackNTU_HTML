@@ -1,0 +1,53 @@
+/*@import 'base.css';*/
+
+h1{
+    color:darkgoldenrod;
+}
+/*後代選擇器*/
+h1 a{
+    color:blueviolet
+}
+h1 span{
+    background-color: navajowhite
+}
+
+.entry{
+    font-size: 15px;
+}
+
+#entry{
+    background-color: chartreuse;
+}
+
+a:hover{
+    color:#99ccaa;
+}
+
+a:focus{
+    font-size: 2em;
+}
+
+ul li:first-child{
+    color: red;
+}
+
+/*Ex6 */
+.paretn > .child{
+    color:red;
+}
+
+/*Ex7 */
+/*
+h2[class=title]{
+    color: red;
+}
+*/
+h2[class=title_blue]{
+    color: blue;
+}
+h2[class=title_red]{
+    color: red;
+}
+h2[class~=title]{
+    background-color: aqua;
+}

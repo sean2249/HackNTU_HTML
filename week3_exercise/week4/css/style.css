@@ -1,0 +1,47 @@
+
+
+.top-banner{
+    background: #2a2e31;
+    overflow:auto;
+    padding:5px 10px;
+}
+.top-banner-social{
+    display:inline-block;
+    float: left;    
+}
+.top-banner-social li{
+    display:inline-block;
+    list-style-type:none;
+    padding: 0 5px;
+}
+.top-banner-social a{
+    text-decoration: none;    
+    color: red;
+}
+.top-banner-menu{
+    float: right;
+    display: inline-block;
+}
+.top-banner-menu li{
+    display: inline-block;
+    color:bisque;
+    padding: 0 5px;
+}
+.top-banner-social a{
+    text-decoration: none;    
+}
+.bottom-banner{
+    background: #404549;
+    padding-left: 20px;
+}
+.bottom-banner-logo{
+    display: inline-block;
+}
+.bottom-banner-logo a{
+    text-decoration: none;
+}
+
+.bottom-banner-menu li{
+    list-style-type: none;
+    display: inline-block;
+}

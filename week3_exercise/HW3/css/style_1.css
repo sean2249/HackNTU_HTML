@@ -1,0 +1,61 @@
+.sidebar{
+    background: white;
+    width: 260px;
+    padding: 20px;
+}
+
+.sidebar-title{
+    text-align: center;
+    color: green;
+}
+
+.side-box{
+    border-bottom: 1px solid #000;
+    margin-bottom:15px;
+}
+
+.side-box-img{
+    width:60px;
+    float: left;
+}
+
+.side-box-content{
+    margin-left: 10px;
+    width:190px;
+    float:left;
+}
+
+/*special offer*/
+/*兩個紅框外面被一個黑框包起來*/
+.side-box{
+    overflow: hidden;
+}
+
+.side-box-content .title a{
+    text-decoration: none;
+    color: grey;
+}
+
+.side-box-content .title a:hover{
+    color: red;
+}
+
+.side-box-content .date{
+    font-style: italic;
+    color:grey;
+    font-size:13px;
+}
+
+/*TITLE LINE*/
+.sidebar-title {
+    border-top:3px double green;
+/*    line-height: 0;*/
+/*    padding-bottom: 15px;*/
+}
+
+.sidebar-title span {
+    background: white;
+    position:relative;
+    top:-10px;
+    padding: 0 10px;
+}

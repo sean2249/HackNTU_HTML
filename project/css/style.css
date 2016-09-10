@@ -1,0 +1,280 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/********/
+/* Base */
+/********/
+
+a {
+	color: #696969;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+
+}
+
+
+/**********/
+/* Layout */
+/**********/
+
+header{
+    background-color: white;
+    padding: 10px;
+    width:100%;
+/*    border: 1px solid black;*/
+    text-align: center;
+    font-size: 80px;
+    line-height: 108px;
+    height: 108px;
+    background: #335C7D;
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+
+/*           // set animation*/
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+header.sticky {
+    position: fixed;
+    font-size: 24px;
+    line-height: 48px;
+    height: 48px;
+    width: 100%;
+    background: #efc47D;
+    text-align: left;
+    padding-left: 20px;
+}
+
+ul[class=headerLabel]{
+
+    list-style-type: none;
+    margin-right: 8px;
+    padding: 0;
+	float:right;
+    background-color: #f1f1f1;
+    border: 1px solid #555;
+    position: fixed;
+    overflow: auto;
+
+}
+
+.content{
+/*    height: 800px;*/
+    padding-top: 0px;
+    padding-bottom: 50px;
+    text-align:center;
+    background: #f0f0f0;
+}
+
+.contentChange{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /*text-align:center;*/
+    height: 500px;
+/*    background: gray;*/
+    background: white;
+	}
+img[class=list-thumb]{
+    width:150px;
+}
+
+.title{
+    color: #696969;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-bottom:10px;
+    font-size: 45px;
+/*    float:left;*/
+}
+
+.home p {
+	padding-top: 50px;
+	font-size: 60px;
+}
+
+.homeImage{
+    border:0px solid #fff;
+    width:100%;
+}
+
+.profileImage {
+	padding-left: 12%;
+	float: left;
+}
+
+.contentChange .about {
+	overflow: hidden;
+}
+
+.contentChange .about .name {
+	padding-top: 2.5em;
+    font-size: 50px;
+}
+
+.contentChange .about h1 {
+	float: left;
+	margin-left: 2em;
+	margin-bottom: 1em;
+}
+
+
+
+
+/**************/
+/* Third Part */
+/**************/
+.profile {
+    display: block;
+    background-color: #ade4ff;
+/*    border: 1px solid #555;*/
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    padding: 0px 0 0px 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.profile .list {
+    display: inline-block;
+    border-radius: 5%;
+    background-color: white;
+	border: 4px solid #000;
+	width: 350px;
+    height:auto;
+/*    height: 300px;*/
+    margin-left:40px;
+	margin-right: 40px;    
+	padding: 20px;
+    overflow:hidden;
+}
+
+.list:nth-child(3n) {
+	margin-right: 0;
+}
+
+
+
+.list-menu li{
+    margin-left: 30px;
+    list-style-type: circle;
+    text-align:left;
+    font-size: 24px;
+}
+
+.project{
+    background-color: #b8ffff;
+    padding: 30px;
+    width:100%;
+    text-align: center;
+}
+
+img[class=project-thumb]{
+    width:100%;
+    margin-bottom: 30px;
+}
+
+.project .list {
+    text-align: center;
+    display: inline-block;
+    border-radius: 5%;
+	border: 3px solid #000;
+	width: 450px;
+    height:500px;
+    margin-top: 10px;
+	margin-right: 40px;
+	margin-bottom: 10px;
+	padding: 30px;
+    overflow:hidden;
+}
+
+.project-data li{
+    margin-left: 30px;
+    padding-bottom: 20px;
+    list-style-type: circle;
+    text-align:left;
+    font-size: 24px;
+}
+
+.footer{
+    padding-left: 25%;
+    height: auto;
+    padding-top: 30px;
+/*    text-align:center;*/
+}
+
+.contact{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.contact-thumb{
+    width:50px;
+    margin-right: 20px;
+}
+
+.bxslider{
+    width:100%;    
+/*    text-align:center;*/
+}
+
+.bxslider li{
+    text-align: center;
+}
+
+.bxslider li img{
+    width:100%;
+}

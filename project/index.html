@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo</title>
+    <meta charset="UTF-8">
+
+    <!-- import Google font -->
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- our markup -->
+<header>
+<!--         <h1 class="headerTitle">Sticky Header12</h1> -->
+        <span class="headerTitle">Lee ChiWei's Profile</span>
+</header>
+
+
+<div class="content">
+    <div class="home">
+        <img class ="homeImage" src="./img/13589262_1270224599655519_745458761_o.jpg" alt="">
+        <p> "Show me the money, and I will take it all." </p>
+    </div>
+</div>
+
+<div class="contentChange">
+        <div class="about">
+            <figure>
+              <img class="profileImage" src="./img/13578734_1270222852989027_787853169_n.png" alt="" width="500px" />
+            </figure>
+            <figure class="name">
+              <h1>Lee Chi-Wei <br><br> 李啟維</h1><br>
+            </figure>
+        </div>
+</div>
+
+<div class="profile">
+        <div class="list">
+				<div class="list-thumb">
+				    <img class = "list-thumb"  src="./img/education.png" alt="" >
+				</div>
+				<h2 class="title"><a href="#">Education</a></h2>
+				<ul class="list-menu">
+				    <li>National Taiwan University, Computer Science</li>
+				    <li>National Tsing Hua University, Physics</li>
+				</ul>
+
+		</div>
+
+        <div class="list">
+				<div class="list-thumb">
+				    <img class = "list-thumb" src="./img/experience.png" alt="" >
+				</div>
+				<h2 class="title"><a href="#">Experience</a></h2>
+				<ul class="list-menu">
+				    <li>National Taiwan University,<br>Teaching Assistant</li>
+				    <li>Shou Ray Information Services,<br>Sales Executive</li>
+				</ul>
+
+		</div>
+
+</div>
+
+<div class="project">
+<!--    <h2 class="title">Project</h2>-->
+
+    <div class="list">
+       <img src="./img/cardetection.png" alt="" class="project-thumb">
+        <div class="title"> <a href="#"> Car Detection</a></div>
+        <ul class="project-data">
+            <li>Course: Pattern Recognition </li>
+           <li>Use Cascade to train a model to find ROI (Hypothesis generation) and use SVM to train classifier to decide
+whether the ROI contain a car (Hypothesis verification).Extract Feature on HOG</li>
+           <li>
+              Got 70~80 % accuracy for region boxing.
+           </li>
+            <li>
+              Github Link: <a href="https://goo.gl/fjVjhy">https://goo.gl/fjVjhy</a>               
+            </li>
+        </ul>
+    </div>
+    <div class="list">
+       <img src="./img/gameProgramming.png" alt="" class="project-thumb">
+        <div class="title"><a href="#">Game Programming</a> </div>
+        <ul class="project-data">
+            <li>Course: Game Programming</li>
+            <li>
+              Based on C++ to create a third-person action game. With enemy and stage implementation.       
+            </li>
+            <li>Youtube Link: <a href="https://goo.gl/SBhs18">https://goo.gl/SBhs18</a> </li>
+            
+        </ul>
+    </div>
+</div>
+
+<ul class="bxslider">
+  <li><img src="./img/n3.jpg" title="Funky roots"/></li>
+  <li><img src="./img/n2.jpg" title="The long and winding road" /></li>
+  <li><img src="./img/n1.jpg" title="Happy trees" /></li>
+</ul>
+
+
+<div class="footer">
+   <div class="contact">
+      <img src="./img/email.png" alt="" class="contact-thumb">
+       sean22492249 at gmail.com
+   </div>
+   <div class="contact">
+      <img src="./img/call.png" alt="" class="contact-thumb">
+       0955-905-823
+   </div>
+</div>
+
+
+
+
+
+<!-- import jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- bxSlider Javascript file -->
+<!--<script type="text/javascript" src="js/jssor.slider.mini.js"></script>-->
+<!--<script src="/js/jquery.bxslider.min.js"></script>-->
+<!-- bxSlider CSS file -->
+<link href="/css/jquery.bxslider.css" rel="stylesheet" />
+<!-- bxSlider Javascript file -->
+<script src="/js/jquery.bxslider.min.js"></script>
+
+<!-- write script to toggle class on scroll -->
+<script>
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1){
+        $('header').addClass("sticky");
+    }
+    else{
+        $('header').removeClass("sticky");
+    }
+});
+    
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+
+</script>
+<script>
+   
+    
+</script>
+
+
+
+
+</body>
+</html>

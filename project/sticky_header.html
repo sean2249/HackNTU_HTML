@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sticky Header</title>
+    <meta charset="UTF-8">
+
+    <!-- import Google font -->
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- our markup -->
+<header>
+<!--         <h1 class="headerTitle">Sticky Header12</h1> -->
+        <span class="headerTitle">Lee ChiWei's Profile</span>
+</header>
+
+<div class="content">
+    <div class="home">
+        <img class ="homeImage" src="/Users/turtlexuan/HackNTU_HTML/project/img/13589262_1270224599655519_745458761_o.jpg" alt="" width="1280px">
+        <p> "Show me the money, and I will take it all." </p>
+    </div>
+</div>
+
+<div class="contentChange">
+        <div class="about">
+            <figure>
+              <img class="profileImage" src="/Users/turtlexuan/HackNTU_HTML/project/img/13578734_1270222852989027_787853169_n.png" alt="" width="500px" />
+            </figure>
+            <figure class="name">
+              <h1>Lee Chi-Wei</h1>
+              <h1>李啟維</h1>
+            </figure>
+        </div>
+</div>
+
+<!-- an image for demonstration purposes -->
+<img src="large-image.jpg" width="782" height="2000" alt="Big Image"/>
+
+<!-- import jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<!-- write script to toggle class on scroll -->
+<script>
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1){
+        $('header').addClass("sticky");
+    }
+    else{
+        $('header').removeClass("sticky");
+    }
+});
+</script>
+</body>
+</html>

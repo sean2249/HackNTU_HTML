@@ -1,0 +1,16 @@
+/*
+1. 讓 How are you  文字變成紅色(color: red)
+2. 讓 Nice to meet you 跟 YOYOY 變成綠色 (color: green)
+3. 讓 Nice to meet you 跟 What's up 背景變成灰色 (background: grey)
+*/
+
+
+h2.demo{
+    color: red;
+}
+h3[class|=demo]{
+    color:green;
+}
+h3[class~=demo]{
+    background: grey;
+}
